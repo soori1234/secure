@@ -8,7 +8,7 @@ $(document).ready(function(){
                   url: "https://httpbin.org/get",
                   error: function(result){
                             alert("error");
-                          }
+                          },
                  success: function(result){
                             alert("result");
                           }
