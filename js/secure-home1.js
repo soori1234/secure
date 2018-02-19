@@ -25,5 +25,5 @@ function fileUpload(){
             txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead. 
         }
     }
-    document.getElementById("demo").innerHTML = txt;
+  alert(txt);
 }
