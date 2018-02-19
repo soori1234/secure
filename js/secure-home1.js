@@ -6,8 +6,7 @@ function readFile() {
     var FR= new FileReader();
     
     FR.addEventListener("load", function(e) {
-      document.getElementById("img").src       = e.target.result;
-      input-img-base64 = e.target.result;
+      document.getElementById("img").src = e.target.result;
     }); 
     
     FR.readAsDataURL( this.files[0] );
