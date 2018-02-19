@@ -16,9 +16,9 @@ function readFile() {
 }
 
 function submitImage(){
-  alert(test);
+  alert("test");
 alert(inputImgString);
 }
 
 document.getElementById("input-image").addEventListener("change", readFile);
-document.getElementById("input-image-submit").addEventListener("click", submitImage, false);
+document.getElementById("input-image-submit").addEventListener("click", submitImage);
