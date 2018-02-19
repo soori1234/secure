@@ -1,3 +1,31 @@
-<html>
-<h1>Welcome</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Single Page App for WebCodeGeeks</title>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom files -->
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+
+</head>
+<body ng-app="app">
+
+<a href="#/"><button class="btn btn-primary">Homepage</button></a>
+<a href="#/about"><button class="btn btn-info">About</button></a>
+<a href="#/date"><button class="btn">Date</button></a>
+
+<div >
+    <div ng-view>
+        <!-- View goes here -->
+    </div>
+</div>
+
+</body>
 </html>
