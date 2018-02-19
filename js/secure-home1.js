@@ -1,4 +1,4 @@
-var input-img-string;
+var inputImgString;
 function readFile() {
   
   if (this.files && this.files[0]) {
@@ -7,12 +7,12 @@ function readFile() {
     
     FR.addEventListener("load", function(e) {
       document.getElementById("img").src = e.target.result;
-      input-img-string=e.target.result;
+      inputImgString=e.target.result;
     }); 
     
     FR.readAsDataURL( this.files[0] );
   }
-  alert(input-img-string);
+  alert(inputImgString);
 }
 
 document.getElementById("input-image").addEventListener("change", readFile);
