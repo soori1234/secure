@@ -1,4 +1,4 @@
-var input-img-base64="";
+
 function readFile() {
   
   if (this.files && this.files[0]) {
