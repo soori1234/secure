@@ -7,6 +7,7 @@ function readFile() {
     
     FR.addEventListener("load", function(e) {
       document.getElementById("img").src = e.target.result;
+      alert(e);
     }); 
     
     FR.readAsDataURL( this.files[0] );
