@@ -11,7 +11,7 @@ function readFile() {
     
     FR.readAsDataURL( this.files[0] );
   }
-  alert(input-img-base64);
+  
 }
 
 document.getElementById("input-image").addEventListener("change", readFile);
