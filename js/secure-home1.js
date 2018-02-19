@@ -1,3 +1,4 @@
+var input-img-base64="";
 function readFile() {
   
   if (this.files && this.files[0]) {
@@ -6,12 +7,12 @@ function readFile() {
     
     FR.addEventListener("load", function(e) {
       document.getElementById("img").src       = e.target.result;
-      document.getElementById("b64").innerHTML = e.target.result;
+      input-img-base64 = e.target.result;
     }); 
     
     FR.readAsDataURL( this.files[0] );
   }
-  
+  alert(input-img-base64);
 }
 
 document.getElementById("input-image").addEventListener("change", readFile);
