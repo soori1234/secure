@@ -1,4 +1,5 @@
 function fileUpload(){
+    alert('thanks');
     var x = document.getElementById("input-image");
     var txt = "";
     if ('files' in x) {
@@ -25,5 +26,5 @@ function fileUpload(){
             txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead. 
         }
     }
-  alert(txt);
+  
 }
